@@ -11,7 +11,7 @@ React问答APP，通过react+gulp+es6+node开发
 
 clone到本地
 ```
-> git clone https://github.com/TimeDe/wall-of-photo.git
+> git clone https://github.com/TimeDe/reactQa.git
 ```
 安装依赖
 ```
@@ -20,45 +20,11 @@ clone到本地
 
 运行开发环境项目
 ```
-> npm start
+> gulp serve
 ```
-打包输出到dist目录
+在本地查看效果
 ```
-> npm run dist
-```
-更多命令请参考 **package.json** 文件, 从头构建项目可以参考视频教程
-
-## 目录说明
-```shell
-.
-├── /cfg/                       # webpack配置文件存放目录
-│   ├── base.js                 # 基础配置
-│   ├── default.js              # 默认配置
-│   ├── dev.js                  # 开发环境配置
-|   ├── dist.js                 # 生成环境配置
-│   └── test.js                 # 测试环境配置
-├── /dist/                      # 存放最终打包输出的用于生产环境的项目文件
-├── /node_modules/              # node模块存放的目录
-├── /src/                       # 存放开发环境项目源码
-│   ├── /actions/               # flux actions目录（没用到）
-│   ├── /components/            # 组件目录
-│   ├── /config/                # 配置目录（没用到）
-│   ├── /sources/               # flux datasources目录（没用到）
-│   ├── /stores/                # flux stores(没用到)
-│   ├── /styles/                # 样式文件目录，内有一个App.css基础css文件
-│   ├── index.html              # 项目入口文件
-│   └── index.js                # js入口文件
-├── /test/                      # 单元测试和集成测试目录
-│── .babelrc                    # Babel 配置文件
-│── .eslintrc                   # ESLint代码风格检测配置文件
-│── .gitignore                  # 配置不需要加入Git版本管理的文件
-│── .yo-rc.json                 # yeoman的配置文件
-│── karma.conf.js               # karma测试框架的配置
-│── LICENSE                     # 软件使用许可
-│── package.json                # npm的依赖配置项
-│── README.md                   # 项目说明文件
-│── server.js                   # 项目运行的js文件，命令可查看package.json中的script
-└── webpack.config.js           # webpack配置文件，不同环境的配置项在cfg目录下
+在浏览器打开localhost: 3000
 ```
 
 ## ES5和ES6写法的不同点
